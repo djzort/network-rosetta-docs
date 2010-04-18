@@ -1,0 +1,727 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Tables</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- "G_PLUGIN_FOR_HTML" -->
+<style type="text/css">
+tt {
+	font-family: courier;
+}
+td {
+	font-family: helvetica, sans-serif;
+}
+caption {
+	font-family: helvetica, sans-serif;
+	font-size: 14pt;
+	text-align: left;
+}
+</style>
+</head>
+<body>
+<p /><table cellspacing="0" cellpadding="3">
+<caption>Sheet1</caption>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;"><b>Function</b></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;"><b>CatOS</b></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;"><b>IOS</b></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;"><b>ExtremeWare</b></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;"><b>JunOS (in cli mode)</b></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set vlan [vlan-id] [mod]/[port]</td>
+<td colspan="6"  valign="bottom"  align="left"  style=" font-size:10pt;">interface [gigabit/fastethernet][mod]/[port] switchport switchport mode access switchport access vlan [vlan-id]</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set port enable [mod]/[port]</td>
+<td colspan="2"  valign="bottom"  align="left"  style=" font-size:10pt;">interface [gigabit/fastethernet][mod]/[port] no shutdown</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set port disable [mod]/[port]</td>
+<td colspan="2"  valign="bottom"  align="left"  style=" font-size:10pt;">interface [gigabit/fastethernet][mod]/[port] shutdown</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set spantree portfast</td>
+<td colspan="3"  valign="bottom"  align="left"  style=" font-size:10pt;">interface [gigabit/fastethernet][mod]/[port] spanning-tree portfast</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set port speed [mod]/[port] [auto/10/100/1000]</td>
+<td colspan="3"  valign="bottom"  align="left"  style=" font-size:10pt;">interface [gigabit/fastethernet][mod]/[port] speed [auto/10/100/1000]</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set port duplex [mod]/[port] [half/full] (Note: Auto duplex automatically set with speed auto )</td>
+<td colspan="3"  valign="bottom"  align="left"  style=" font-size:10pt;">interface [gigabit/fastethernet][mod]/[port] duplex [auto/full/half]</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Reset Switch/Router</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">reset system</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">reload</td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">restart &lt;service&gt;</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Mac Addresses on ports</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show cam dynamic</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show mac-address-table dynamic</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show fdb</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Port Aggregation</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show channel</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show etherchannel summary</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show port sharing</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show lacp interfaces</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Show Port Information</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show port [mod]/[port]</td>
+<td colspan="2"  valign="bottom"  align="left"  style=" font-size:10pt;">show interface [gigabit/fastethernet][mod]/[port]</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show interfaces &lt;port&gt;</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Show Spanning Tree info</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show spantree</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show spanning-tree</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show &quot;spanning tree name. ie s0&quot;</td>
+<td colspan="2"  valign="bottom"  align="left"  style=" font-size:10pt;">show spanning-tree interface</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show trunk</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show interfaces trunk</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Show Port-VLAN allocation</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show vlan</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show vlan</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show vlan</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show vlans</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show vtp domain</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show vtp status</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Set Hostname</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set system name [label]</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">hostname [label]</td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set system host-name </td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set spantree backbonefast</td>
+<td colspan="2"  valign="bottom"  align="left"  style=" font-size:10pt;">spanning-tree backbonefast</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set spantree macreduction table</td>
+<td colspan="2"  valign="bottom"  align="left"  style=" font-size:10pt;">spanning-tree extend system-id</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">reset</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">reload</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Show IP Routes</td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show ip route</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show iproute</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show route</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Enable lldp</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">enable lldp ports all</td>
+<td colspan="2"  valign="bottom"  align="left"  style=" font-size:10pt;">set protocols lldp interface all</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Show lldp</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show lldp</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">disable lldp</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">set protocols lldp disable</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Enable CDP</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">N/A</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">N/A</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Software Version</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show version</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show version</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Chassis Inventory</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show version detail</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show chassis hardware</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Turn off Page Clipping</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">disable clipaging</td>
+<td colspan="3"  valign="bottom"  align="left"  style=" font-size:10pt;">set cli screen-length 0 &amp; set cli screen-width 0</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Display Configuration</td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show run</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show configuration [detail]</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">show configuration</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Enter Configuration Mode</td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">configure terminal</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">n/a</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">configure</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Save Configuration</td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">write memory</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">save</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">commit</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Upload Configuration</td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">copy start tftp</td>
+<td colspan="2"  valign="bottom"  align="left"  style=" font-size:10pt;">upload configuration vr vr-default 10.0.0.100</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">Wipe Configuration!</td>
+<td  style=""></td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">write erase</td>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">unconfigure switch all</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+</tr>
+<tr>
+<td  valign="bottom"  align="left"  style=" font-size:10pt;">WWW</td>
+<td  style=""></td>
+<td  style=""></td>
+<td  style=""></td>
+<td colspan="12"  valign="bottom"  align="left"  style=" font-size:10pt;">http://www.juniper.net/techpubs/en_US/junos9.5/information-products/topic-collections/swconfig-cli/noframes-expandedTOC.html</td>
+</tr>
+</table>
+<p /><table cellspacing="0" cellpadding="3">
+<caption>Sheet2</caption>
+<tr>
+<td  style=""></td>
+</tr>
+</table>
+<p /><table cellspacing="0" cellpadding="3">
+<caption>Sheet3</caption>
+<tr>
+<td  style=""></td>
+</tr>
+</table>
+</body>
+</html>
